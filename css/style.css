@@ -630,6 +630,8 @@ header {
     padding: 40px 20px;
     border: 1px solid #EEE;
     margin: 15px 0px;
+    background-color: #EEE;
+    opacity: 0.8;
 }
 
 .about i {
@@ -1601,6 +1603,35 @@ header {
     transition: 0.2s opacity;
 }
 
+.container0{
+    /* background-color:lightblue; */
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background-image: url('../img/about2.jpg'); 
+        background-repeat: repeat-x;
+        /* border-style: groove; */
+        border-top: groove;
+        border-bottom-style: groove;
+        background-size: 100% 100%;
+}
+
+.container1{
+    /* background-color:lightblue; */
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background-image: url('../img/background4.jpg'); 
+        background-repeat: repeat-x;
+        /* border-style: groove; */
+        border-top: groove;
+        border-bottom-style: groove;
+        background-size: 100% 100%;
+}
+
+
 .owl-theme:hover .owl-nav {
     opacity: 1;
 }
@@ -1750,4 +1781,62 @@ header {
     -webkit-transform:scale(0);
             transform:scale(0);
   }
+}
+
+::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  html, body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* overflow:hidden; */
+  }
+
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+.activity-feed {
+  padding: 15px;
+}
+.activity-feed .feed-item {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-left: 2px solid #e4e8eb;
+}
+.activity-feed .feed-item:last-child {
+  border-color: transparent;
+}
+.activity-feed .feed-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #f37167;
+}
+.activity-feed .feed-item .date {
+  position: relative;
+  top: -5px;
+  color: #8c96a3;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.activity-feed .feed-item .text {
+  position: relative;
+  top: -3px;
 }
