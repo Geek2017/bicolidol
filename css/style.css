@@ -1631,6 +1631,20 @@ header {
         background-size: 100% 100%;
 }
 
+.container2{
+    /* background-color:lightblue; */
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        background-image: url('../img/news2.jpg'); 
+        background-repeat: repeat-x;
+        /* border-style: groove; */
+        border-top: groove;
+        border-bottom-style: groove;
+        background-size: 100% 100%;
+}
+
 
 .owl-theme:hover .owl-nav {
     opacity: 1;
@@ -1839,4 +1853,36 @@ header {
 .activity-feed .feed-item .text {
   position: relative;
   top: -3px;
+}
+
+#myCarousel .carousel-caption {
+    left:0;
+	right:0;
+	bottom:0;
+	text-align:left;
+	padding:10px;
+	background:rgba(0,0,0,0.6);
+	text-shadow:none;
+}
+
+#myCarousel .list-group {
+	position:absolute;
+	top:0;
+	right:0;
+}
+#myCarousel .list-group-item {
+	border-radius:0px;
+	cursor:pointer;
+}
+#myCarousel .list-group .active {
+	background-color:#eee;	
+}
+
+@media (min-width: 992px) { 
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;} 	
+}
+@media (max-width: 991px) { 
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;} 
 }
