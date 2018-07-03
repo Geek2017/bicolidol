@@ -969,8 +969,8 @@ header {
 
 .testimonial-meta {
     position: relative;
-    padding-left: 90px;
-    height: 70px;
+    padding-left: 100px;
+    height: 90px;
     margin-bottom: 20px;
     padding-top: 10px;
 }
@@ -979,9 +979,9 @@ header {
     position: absolute;
     left: 0;
     top: 0;
-    width: 70px !important;
-    height: 70px !important;
-    border-radius: 50%;
+    width: 100px !important;
+    height: 100px !important;
+    
 }
 
 .testimonial h3 {
@@ -1886,3 +1886,79 @@ header {
 	.carousel-caption p,
 	#myCarousel .list-group {display:none;} 
 }
+
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-control {
+	left: -12px;
+    height: 40px;
+	width: 40px;
+    background: none repeat scroll 0 0 #222222;
+    border: 4px solid #FFFFFF;
+    border-radius: 23px 23px 23px 23px;
+    margin-top: 90px;
+}
+.carousel-control.right {
+	right: -12px;
+}
+/* The indicators */
+.carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: -10px;
+	margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+	background: #cecece;
+}
+.carousel-indicators .active {
+background: #428bca;
+}
+
+ .vimeo-wrapper {
+        max-width: 1120px;
+        position: relative;
+        /* margin: 0 auto; */
+        /* float: center; */
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .vimeo-standard {
+        float: left;
+        height: 300px;
+        width: 50%;
+        border: 1px solid #000;
+        margin: 0px;
+     
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    @media (max-width:767px) {
+
+        .vimeo-standard {
+            float: none;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+    }
+
+    .clearfix:before,
+    .clearfix:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .clearfix:after {
+        clear: both;
+    }
