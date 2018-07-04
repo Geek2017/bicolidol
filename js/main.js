@@ -6,7 +6,7 @@
 	$(window).on('load', function() {
 		$("#preloader").delay(600).fadeOut();
 	});
-	var images = ["background1.jpg", "background2.jpg", "background3.jpg", "background4.jpg","background5.jpg"];
+	var images = ["background1.jpg", "background2.jpg", "background3.jpg","background5.jpg"];
 	var i = 0;
 
 	$("#bg-img").css("background-image", "url(./img/" + images[i] + ")");
@@ -76,35 +76,9 @@
 		type: 'image'
 	});
 
-	///////////////////////////
-	// Owl Carousel
-	$('#about-slider').owlCarousel({
-		items:1,
-		loop:true,
-		margin:15,
-		nav: true,
-		navText : ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-		dots : true,
-		autoplay : true,
-		animateOut: 'fadeOut'
-	});
 
-	$('#testimonial-slider').owlCarousel({
-		loop:true,
-		margin:15,
-		dots : true,
-		nav: false,
-		autoplay : true,
-		responsive:{
-			0: {
-				items:1
-			},
-			992:{
-				items:2
-			}
-		}
-	});
 
+	
 	var clickEvent = false;
 	$('#myCarousel').carousel({
 		interval:   4000	
@@ -125,6 +99,8 @@
 		clickEvent = false;
 	});
 
+	
+
 })(jQuery);
 
 setTimeout(function(){ 
@@ -138,3 +114,19 @@ $('#Carousel').carousel({
 	interval: 5000
 })
 
+$('.carousel[data-type="multi"] .item').each(function(){
+	var next = $(this).next();
+	if (!next.length) {
+	  next = $(this).siblings(':first');
+	}
+	next.children(':first-child').clone().appendTo($(this));
+	
+	for (var i=0;i<4;i++) {
+	  next=next.next();
+	  if (!next.length) {
+		  next = $(this).siblings(':first');
+		}
+	  
+	  next.children(':first-child').clone().appendTo($(this));
+	}
+  });
