@@ -1,0 +1,63 @@
+[debug] [2018-07-04T01:04:08.138Z] ----------------------------------------------------------------------
+[debug] [2018-07-04T01:04:08.149Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2018-07-04T01:04:08.150Z] CLI Version:   3.19.2
+[debug] [2018-07-04T01:04:08.150Z] Platform:      darwin
+[debug] [2018-07-04T01:04:08.150Z] Node Version:  v8.11.1
+[debug] [2018-07-04T01:04:08.151Z] Time:          Wed Jul 04 2018 09:04:08 GMT+0800 (PHT)
+[debug] [2018-07-04T01:04:08.152Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-04T01:04:08.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-07-04T01:04:08.238Z] > authorizing via signed-in user
+[info] 
+     🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥     🔥🔥🔥     🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥     🔥🔥 🔥🔥       🔥🔥     🔥🔥  🔥🔥   🔥🔥  🔥🔥       🔥🔥
+     🔥🔥🔥🔥🔥🔥    🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥   🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥
+     🔥🔥        🔥🔥  🔥🔥    🔥🔥  🔥🔥       🔥🔥     🔥🔥 🔥🔥     🔥🔥       🔥🔥 🔥🔥
+     🔥🔥       🔥🔥🔥🔥 🔥🔥     🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥 🔥🔥🔥🔥🔥🔥🔥🔥  🔥🔥     🔥🔥  🔥🔥🔥🔥🔥🔥  🔥🔥🔥🔥🔥🔥🔥🔥
+
+You're about to initialize a Firebase project in this directory:
+
+  /Applications/MAMP/htdocs/bicolidol
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-07-04T01:04:22.465Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-04T01:04:22.466Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/qiWOfEPF9I7gN0rsBn1UY5n4Ti_MHV-nvG_YSoraVAE',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jul 04 2018 09:04:22 GMT+0800 (PHT)
+[debug] [2018-07-04T01:04:22.969Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-04T01:04:23.051Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Wed Jul 04 2018 09:04:23 GMT+0800 (PHT)
+[debug] [2018-07-04T01:04:25.245Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html
+[debug] [2018-07-04T01:05:52.781Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+  
+ Wed Jul 04 2018 09:05:52 GMT+0800 (PHT)
+[debug] [2018-07-04T01:05:53.429Z] <<< HTTP RESPONSE 200
+[info] i  Skipping write of public/index.html
+[info] 
+[info] i  Writing configuration info to firebase.json...
+[info] i  Writing project information to .firebaserc...
+[info] 
+[info] ✔  Firebase initialization complete!
